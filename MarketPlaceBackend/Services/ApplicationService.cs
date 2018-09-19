@@ -27,14 +27,12 @@ namespace MarketPlaceBackend.Services
         public async Task<IEnumerable<Object>> getAllApplicationsWithoutId()
         {
             var applications = await (from app in _context.Application
-                                select new
-                                {
-                                    Name = app.Name,
-                                    Info = app.Info,
-                                    Developer = app.Developer,
-                                    AppUrl = app.AppUrl,
-                                    LogoUrl = app.LogoUrl
-                                }).ToListAsync();
+                                      select new
+                                      {
+                                          firstName = app.Name,
+                                          lastName = "Bot",
+                                          emailId = "tldm-github-bot@gmail.com"
+                                      }).ToListAsync();
             return applications;
         }
 

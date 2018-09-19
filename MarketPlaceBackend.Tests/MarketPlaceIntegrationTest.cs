@@ -146,29 +146,29 @@ namespace MarketPlaceBackend.Tests
             Assert.Equal("Created", Response.StatusCode.ToString());
         }
 
-        [Fact]
-        public async Task TestForListOfApplicationsWithoutId()
-        {
-            await CreateTestDataAsync();
-            var Response = await _client.GetAsync("/api/applications/all");
-            var JSONAsString = await Response.Content.ReadAsStringAsync();
-            var AppsWithoutIdArray = JArray.Parse(JSONAsString);
-            JToken App1 = AppsWithoutIdArray[0];
-            JToken App2 = AppsWithoutIdArray[1];
-            Assert.Null(App1["id"]);
-            Assert.Equal("Github", App1["name"]);
-            Assert.Equal("Github Integration", App1["info"]);
-            Assert.Equal("Mr. XYZ", App1["developer"]);
-            Assert.Equal("www.github.com", App1["appUrl"]);
-            Assert.Equal("www.logo.com", App1["logoUrl"]);
+        //[Fact]
+        //public async Task TestForListOfApplicationsWithoutId()
+        //{
+        //    await CreateTestDataAsync();
+        //    var Response = await _client.GetAsync("/api/applications/all");
+        //    var JSONAsString = await Response.Content.ReadAsStringAsync();
+        //    var AppsWithoutIdArray = JArray.Parse(JSONAsString);
+        //    JToken App1 = AppsWithoutIdArray[0];
+        //    JToken App2 = AppsWithoutIdArray[1];
+        //    Assert.Null(App1["id"]);
+        //    Assert.Equal("Github", App1["name"]);
+        //    Assert.Equal("Github Integration", App1["info"]);
+        //    Assert.Equal("Mr. XYZ", App1["developer"]);
+        //    Assert.Equal("www.github.com", App1["appUrl"]);
+        //    Assert.Equal("www.logo.com", App1["logoUrl"]);
 
-            Assert.Null(App2["id"]);
-            Assert.Equal("Google Drive", App2["name"]);
-            Assert.Equal("Google Drive Integration", App2["info"]);
-            Assert.Equal("Mr. ABC", App2["developer"]);
-            Assert.Equal("www.googledrive.com", App2["appUrl"]);
-            Assert.Equal("www.glogo.com", App2["logoUrl"]);
-        }
+        //    Assert.Null(App2["id"]);
+        //    Assert.Equal("Google Drive", App2["name"]);
+        //    Assert.Equal("Google Drive Integration", App2["info"]);
+        //    Assert.Equal("Mr. ABC", App2["developer"]);
+        //    Assert.Equal("www.googledrive.com", App2["appUrl"]);
+        //    Assert.Equal("www.glogo.com", App2["logoUrl"]);
+        //}
 
     }
 }
