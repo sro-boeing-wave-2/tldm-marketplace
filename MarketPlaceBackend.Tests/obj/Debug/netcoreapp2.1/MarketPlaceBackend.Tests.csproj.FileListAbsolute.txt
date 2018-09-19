@@ -1,0 +1,51 @@
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.deps.json
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.runtimeconfig.json
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.runtimeconfig.dev.json
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.dll
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\MarketPlaceBackend.dll
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\MarketPlaceBackend.pdb
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend.Tests\obj\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.csprojAssemblyReference.cache
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend.Tests\obj\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.csproj.CoreCompileInputs.cache
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend.Tests\obj\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.AssemblyInfoInputs.cache
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend.Tests\obj\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.AssemblyInfo.cs
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend.Tests\obj\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.csproj.CopyComplete
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.pdb
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend.Tests\obj\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.dll
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend.Tests\obj\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.pdb
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.deps.json
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.runtimeconfig.json
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.runtimeconfig.dev.json
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.dll
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.pdb
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\MarketPlaceBackend.dll
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\MarketPlaceBackend.pdb
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend.Tests\obj\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend.Tests\obj\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend.Tests\obj\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend.Tests\obj\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.AssemblyInfo.cs
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend.Tests\obj\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.csproj.CopyComplete
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend.Tests\obj\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.dll
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend.Tests\obj\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.pdb
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.deps.json
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.runtimeconfig.json
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.runtimeconfig.dev.json
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.dll
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.pdb
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\MarketPlaceBackend.dll
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend.Tests\bin\Debug\netcoreapp2.1\MarketPlaceBackend.pdb
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend.Tests\obj\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.csprojAssemblyReference.cache
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend.Tests\obj\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend.Tests\obj\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.AssemblyInfoInputs.cache
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend.Tests\obj\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.AssemblyInfo.cs
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend.Tests\obj\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.csproj.CopyComplete
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend.Tests\obj\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.dll
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend.Tests\obj\Debug\netcoreapp2.1\MarketPlaceBackend.Tests.pdb

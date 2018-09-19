@@ -1,0 +1,42 @@
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend\bin\Debug\netcoreapp2.1\MarketPlaceBackend.deps.json
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend\bin\Debug\netcoreapp2.1\MarketPlaceBackend.runtimeconfig.json
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend\bin\Debug\netcoreapp2.1\MarketPlaceBackend.runtimeconfig.dev.json
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend\bin\Debug\netcoreapp2.1\MarketPlaceBackend.dll
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.csprojAssemblyReference.cache
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.csproj.CoreCompileInputs.cache
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.RazorAssemblyInfo.cache
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.RazorAssemblyInfo.cs
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.AssemblyInfoInputs.cache
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.AssemblyInfo.cs
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.RazorTargetAssemblyInfo.cache
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend\bin\Debug\netcoreapp2.1\MarketPlaceBackend.pdb
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.dll
+D:\PRODUCT DEVELOPMENT\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.pdb
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend\bin\Debug\netcoreapp2.1\MarketPlaceBackend.deps.json
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend\bin\Debug\netcoreapp2.1\MarketPlaceBackend.runtimeconfig.json
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend\bin\Debug\netcoreapp2.1\MarketPlaceBackend.runtimeconfig.dev.json
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend\bin\Debug\netcoreapp2.1\MarketPlaceBackend.dll
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend\bin\Debug\netcoreapp2.1\MarketPlaceBackend.pdb
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.RazorAssemblyInfo.cache
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.RazorAssemblyInfo.cs
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.AssemblyInfo.cs
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.RazorTargetAssemblyInfo.cache
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.dll
+C:\Users\Admin\Documents\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.pdb
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend\bin\Debug\netcoreapp2.1\MarketPlaceBackend.deps.json
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend\bin\Debug\netcoreapp2.1\MarketPlaceBackend.runtimeconfig.json
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend\bin\Debug\netcoreapp2.1\MarketPlaceBackend.runtimeconfig.dev.json
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend\bin\Debug\netcoreapp2.1\MarketPlaceBackend.dll
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend\bin\Debug\netcoreapp2.1\MarketPlaceBackend.pdb
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.csprojAssemblyReference.cache
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.RazorAssemblyInfo.cache
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.RazorAssemblyInfo.cs
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.AssemblyInfoInputs.cache
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.AssemblyInfo.cs
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.RazorTargetAssemblyInfo.cache
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.dll
+C:\Users\Admin\Music\Marketplace Backend Using Services\MarketPlaceBackend\obj\Debug\netcoreapp2.1\MarketPlaceBackend.pdb
