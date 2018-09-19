@@ -64,7 +64,7 @@ namespace MarketPlaceBackend
                 app.UseHsts();
             }
 
-            //for docker 
+            //for docker support
 
             // var context = app.ApplicationServices.GetService<MarketPlaceBackendContext>();
             // context.Database.Migrate();
