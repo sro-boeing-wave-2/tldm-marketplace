@@ -22,7 +22,7 @@ namespace MarketPlaceBackend
         public Startup(IConfiguration configuration, IHostingEnvironment environment)
         {
             Configuration = configuration;
-            Environment = environment; 
+            Environment = environment;
         }
 
         public IConfiguration Configuration { get; }
@@ -38,16 +38,24 @@ namespace MarketPlaceBackend
                 )
             );
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            if(Environment.IsEnvironment("Testing"))
+            if (Environment.IsEnvironment("Testing"))
             {
                 services.AddDbContext<MarketPlaceBackendContext>(options => options.UseInMemoryDatabase("TesingDb"));
-            } else
+                services.AddDbContext<MarketPlaceBackendContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("DockerContext")));
+            }
+            else
             {
-                //services.AddDbContext<MarketPlaceBackendContext>(options =>
-                //    options.UseSqlServer(Configuration.GetConnectionString("MarketPlaceBackendContext")));
-
-                services.AddDbContext<MarketPlaceBackendContext>(options => // for docker file
-                   options.UseSqlServer(Configuration.GetConnectionString("DockerContext")));
+                services.AddDbContext<MarketPlaceBackendContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("DockerContext"),
+                        sqlServerOptionsAction: sqlOptions =>
+                        {
+                                sqlOptions.EnableRetryOnFailure(
+                                maxRetryCount: 10,
+                                maxRetryDelay: TimeSpan.FromSeconds(30),
+                                errorNumbersToAdd: null
+                        );
+                        }));
             }
             services.AddTransient<IApplicationService, ApplicationService>();
         }
@@ -65,9 +73,11 @@ namespace MarketPlaceBackend
             }
 
             //for docker 
-
-            var context = app.ApplicationServices.GetService<MarketPlaceBackendContext>();
-            context.Database.Migrate();
+            if(!env.IsEnvironment("Testing"))
+            {
+                var context = app.ApplicationServices.GetService<MarketPlaceBackendContext>();
+                context.Database.Migrate();
+            }
             app.UseCors("AppPolicy");
             //app.UseHttpsRedirection();
             app.UseMvc();

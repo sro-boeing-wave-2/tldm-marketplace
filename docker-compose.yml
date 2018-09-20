@@ -3,13 +3,11 @@ version: '3.4'
 services:
   web:
     build: ./MarketPlaceBackend
-      # context: .
-      #   dockerfile: dockerfile
-
     ports:
         - "2720:80"
     depends_on:
         - db
+    restart: always
   db:
     image: "microsoft/mssql-server-linux"
     environment:

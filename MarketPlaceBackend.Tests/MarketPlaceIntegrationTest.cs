@@ -50,101 +50,101 @@ namespace MarketPlaceBackend.Tests
             Response = await _client.PostAsync("/api/applications", stringContent);
         }
 
-        // [Fact]
-        // public async Task TestGetRequestAsync()
-        // {
-        //     var Response = await _client.GetAsync("/api/applications");
-        //     var ResponseBody = await Response.Content.ReadAsStringAsync();
-        //     Response.EnsureSuccessStatusCode();
-        // }
+        [Fact]
+        public async Task TestGetRequestAsync()
+        {
+            var Response = await _client.GetAsync("/api/applications");
+            var ResponseBody = await Response.Content.ReadAsStringAsync();
+            Response.EnsureSuccessStatusCode();
+        }
 
-        // [Fact]
-        // public async Task TestGetByIdForNullCase()
-        // {
-        //     var Response = await _client.GetAsync("/api/applications/abcd-efgh");
-        //     Assert.Equal("NotFound", Response.StatusCode.ToString());
-        // }
+        [Fact]
+        public async Task TestGetByIdForNullCase()
+        {
+            var Response = await _client.GetAsync("/api/applications/abcd-efgh");
+            Assert.Equal("NotFound", Response.StatusCode.ToString());
+        }
 
-        // [Fact]
-        // public async Task TestGetById()
-        // {
-        //     await CreateTestDataAsync();
-        //     var Response = await _client.GetAsync("/api/applications/abcd-efgh");
-        //     var ApplicationAsString = await Response.Content.ReadAsStringAsync();
-        //     JObject applicationObject = JObject.Parse(ApplicationAsString);
+        [Fact]
+        public async Task TestGetById()
+        {
+            await CreateTestDataAsync();
+            var Response = await _client.GetAsync("/api/applications/abcd-efgh");
+            var ApplicationAsString = await Response.Content.ReadAsStringAsync();
+            JObject applicationObject = JObject.Parse(ApplicationAsString);
 
-        //     Assert.Equal("Github", applicationObject.GetValue("name"));
-        //     Assert.Equal("Github Integration", applicationObject.GetValue("info"));
-        //     Assert.Equal("Mr. XYZ", applicationObject.GetValue("developer"));
-        //     Assert.Equal("www.github.com", applicationObject.GetValue("appUrl"));
-        //     Assert.Equal("www.logo.com", applicationObject.GetValue("logoUrl"));
+            Assert.Equal("Github", applicationObject.GetValue("name"));
+            Assert.Equal("Github Integration", applicationObject.GetValue("info"));
+            Assert.Equal("Mr. XYZ", applicationObject.GetValue("developer"));
+            Assert.Equal("www.github.com", applicationObject.GetValue("appUrl"));
+            Assert.Equal("www.logo.com", applicationObject.GetValue("logoUrl"));
 
-        //     Response.EnsureSuccessStatusCode();
-        // }
+            Response.EnsureSuccessStatusCode();
+        }
 
-        // [Fact]
-        // public async Task TestForDeleteAsync()
-        // {
-        //     await CreateTestDataAsync();
+        [Fact]
+        public async Task TestForDeleteAsync()
+        {
+            await CreateTestDataAsync();
 
-        //     var Response = await _client.DeleteAsync("/api/applications/abcd-efgh");
-        //     var ApplicationAsString = await Response.Content.ReadAsStringAsync();
-        //     JObject applicationObject = JObject.Parse(ApplicationAsString);
+            var Response = await _client.DeleteAsync("/api/applications/abcd-efgh");
+            var ApplicationAsString = await Response.Content.ReadAsStringAsync();
+            JObject applicationObject = JObject.Parse(ApplicationAsString);
 
-        //     Assert.Equal("Github", applicationObject.GetValue("name"));
-        //     Assert.Equal("Github Integration", applicationObject.GetValue("info"));
-        //     Assert.Equal("Mr. XYZ", applicationObject.GetValue("developer"));
-        //     Assert.Equal("www.github.com", applicationObject.GetValue("appUrl"));
-        //     Assert.Equal("www.logo.com", applicationObject.GetValue("logoUrl"));
+            Assert.Equal("Github", applicationObject.GetValue("name"));
+            Assert.Equal("Github Integration", applicationObject.GetValue("info"));
+            Assert.Equal("Mr. XYZ", applicationObject.GetValue("developer"));
+            Assert.Equal("www.github.com", applicationObject.GetValue("appUrl"));
+            Assert.Equal("www.logo.com", applicationObject.GetValue("logoUrl"));
 
-        //     Response.EnsureSuccessStatusCode();
-        // }
+            Response.EnsureSuccessStatusCode();
+        }
 
-        // [Fact]
-        // public async Task TestForPutAsync()
-        // {
-        //     await CreateTestDataAsync();
-        //     var App = new Application()
-        //     {
-        //         Id = "abcd-efgh",
-        //         Name = "Github Updated"
-        //     };
-        //     var json = JsonConvert.SerializeObject(App);
-        //     var stringContent = new StringContent(json, UnicodeEncoding.UTF8, "application/json");
-        //     var Response = await _client.PutAsync("/api/applications/abcd-efgh", stringContent);
+        [Fact]
+        public async Task TestForPutAsync()
+        {
+            await CreateTestDataAsync();
+            var App = new Application()
+            {
+                Id = "abcd-efgh",
+                Name = "Github Updated"
+            };
+            var json = JsonConvert.SerializeObject(App);
+            var stringContent = new StringContent(json, UnicodeEncoding.UTF8, "application/json");
+            var Response = await _client.PutAsync("/api/applications/abcd-efgh", stringContent);
 
-        //     Assert.Equal("NoContent", Response.StatusCode.ToString());
+            Assert.Equal("NoContent", Response.StatusCode.ToString());
 
-        //     Response = await _client.DeleteAsync("/api/applications/abcd-efgh");
-        //     var ApplicationAsString = await Response.Content.ReadAsStringAsync();
-        //     JObject applicationObject = JObject.Parse(ApplicationAsString);
+            Response = await _client.DeleteAsync("/api/applications/abcd-efgh");
+            var ApplicationAsString = await Response.Content.ReadAsStringAsync();
+            JObject applicationObject = JObject.Parse(ApplicationAsString);
 
-        //     Assert.Equal("Github Updated", applicationObject.GetValue("name"));
-        //     Assert.Equal("Github Integration", applicationObject.GetValue("info"));
-        //     Assert.Equal("Mr. XYZ", applicationObject.GetValue("developer"));
-        //     Assert.Equal("www.github.com", applicationObject.GetValue("appUrl"));
-        //     Assert.Equal("www.logo.com", applicationObject.GetValue("logoUrl"));
+            Assert.Equal("Github Updated", applicationObject.GetValue("name"));
+            Assert.Equal("Github Integration", applicationObject.GetValue("info"));
+            Assert.Equal("Mr. XYZ", applicationObject.GetValue("developer"));
+            Assert.Equal("www.github.com", applicationObject.GetValue("appUrl"));
+            Assert.Equal("www.logo.com", applicationObject.GetValue("logoUrl"));
 
-        //     Response.EnsureSuccessStatusCode();
-        // }
+            Response.EnsureSuccessStatusCode();
+        }
 
-        // [Fact]
-        // public async Task TestForPostAsync()
-        // {
-        //     var app = new Application()
-        //     {
-        //         Id = "klmo-pqrs",
-        //         Name = "Twitter",
-        //         Info = "Twitter Integration",
-        //         AppUrl = "www.twitter.com",
-        //         Developer = "Mr. Twit",
-        //         LogoUrl = "www.twitterlogo.com"
-        //     };
-        //     var json = JsonConvert.SerializeObject(app);
-        //     var stringContent = new StringContent(json, UnicodeEncoding.UTF8, "application/json");
-        //     var Response = await _client.PostAsync("/api/applications", stringContent);
-        //     Assert.Equal("Created", Response.StatusCode.ToString());
-        // }
+        [Fact]
+        public async Task TestForPostAsync()
+        {
+            var app = new Application()
+            {
+                Id = "klmo-pqrs",
+                Name = "Twitter",
+                Info = "Twitter Integration",
+                AppUrl = "www.twitter.com",
+                Developer = "Mr. Twit",
+                LogoUrl = "www.twitterlogo.com"
+            };
+            var json = JsonConvert.SerializeObject(app);
+            var stringContent = new StringContent(json, UnicodeEncoding.UTF8, "application/json");
+            var Response = await _client.PostAsync("/api/applications", stringContent);
+            Assert.Equal("Created", Response.StatusCode.ToString());
+        }
 
         //[Fact]
         //public async Task TestForListOfApplicationsWithoutId()
