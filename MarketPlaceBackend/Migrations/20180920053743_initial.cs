@@ -12,6 +12,7 @@ namespace MarketPlaceBackend.Migrations
                 {
                     Id = table.Column<string>(nullable: false),
                     Name = table.Column<string>(nullable: true),
+                    EmailId = table.Column<string>(nullable: true),
                     Info = table.Column<string>(nullable: true),
                     Developer = table.Column<string>(nullable: true),
                     AppUrl = table.Column<string>(nullable: true),

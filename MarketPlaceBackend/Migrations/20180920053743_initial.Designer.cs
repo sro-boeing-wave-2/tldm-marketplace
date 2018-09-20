@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MarketPlaceBackend.Migrations
 {
     [DbContext(typeof(MarketPlaceBackendContext))]
-    [Migration("20180916020832_initial")]
+    [Migration("20180920053743_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -28,6 +28,8 @@ namespace MarketPlaceBackend.Migrations
                     b.Property<string>("AppUrl");
 
                     b.Property<string>("Developer");
+
+                    b.Property<string>("EmailId");
 
                     b.Property<string>("Info");
 

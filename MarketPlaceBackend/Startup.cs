@@ -43,8 +43,8 @@ namespace MarketPlaceBackend
                 services.AddDbContext<MarketPlaceBackendContext>(options => options.UseInMemoryDatabase("TesingDb"));
             } else
             {
-                // services.AddDbContext<MarketPlaceBackendContext>(options =>
-                //     options.UseSqlServer(Configuration.GetConnectionString("MarketPlaceBackendContext")));
+                //services.AddDbContext<MarketPlaceBackendContext>(options =>
+                //    options.UseSqlServer(Configuration.GetConnectionString("MarketPlaceBackendContext")));
 
                 services.AddDbContext<MarketPlaceBackendContext>(options => // for docker file
                    options.UseSqlServer(Configuration.GetConnectionString("DockerContext")));

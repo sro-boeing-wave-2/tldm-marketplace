@@ -31,7 +31,7 @@ namespace MarketPlaceBackend.Services
                                       {
                                           firstName = app.Name,
                                           lastName = "Bot",
-                                          emailId = "tldm-github-bot@gmail.com"
+                                          emailId = app.EmailId
                                       }).ToListAsync();
             return applications;
         }
