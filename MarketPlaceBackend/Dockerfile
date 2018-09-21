@@ -12,6 +12,6 @@ RUN dotnet publish -c Release -o out
 # Build runtime image
 FROM microsoft/dotnet:aspnetcore-runtime
 WORKDIR /app
-EXPOSE 2720
+EXPOSE 80
 COPY --from=build-env /app/out .
 ENTRYPOINT ["dotnet", "MarketPlaceBackend.dll"]
