@@ -6,11 +6,9 @@ services:
     depends_on:
         - db
     labels:
-     - "SERVICE_NAME=marketplace-service"
+     - "SERVICE_80_NAME=marketplace-service"
      - "SERVICE_TAG=marketplace-serviceTag"
-    expose:
-     - "2720"
-    restart: always
+    restart: on-failure
   db:
     image: "microsoft/mssql-server-linux"
     environment:
