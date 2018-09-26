@@ -72,14 +72,12 @@ namespace MarketPlaceBackend
                 app.UseHsts();
             }
 
-            //for docker 
             if(!env.IsEnvironment("Testing"))
             {
                 var context = app.ApplicationServices.GetService<MarketPlaceBackendContext>();
                 context.Database.Migrate();
             }
             app.UseCors("AppPolicy");
-            //app.UseHttpsRedirection();
             app.UseMvc();
         }
     }
