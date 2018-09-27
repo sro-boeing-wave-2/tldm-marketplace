@@ -3,6 +3,8 @@ version: '3.4'
 services:
   web:
     build: ./MarketPlaceBackend
+    ports: 
+      - "2720:80"
     depends_on:
         - db
     labels:

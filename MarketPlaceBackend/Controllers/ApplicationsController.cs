@@ -25,11 +25,26 @@ namespace MarketPlaceBackend.Controllers
             return applications;
         }
 
-        [HttpGet("all")]
-        public async Task<IEnumerable<Object>> GetAllApplicationsWithoutId()
+        [HttpGet("userobject")]
+        public async Task<IEnumerable<Object>> getAllApplicationsAsUserObjectOfOnboarding()
         {
-            var applications = await _service.getAllApplicationsWithoutId();
+            var applications = await _service.getAllApplicationsAsUserObjectOfOnboarding();
             return applications;
+        }
+
+        [HttpGet("all")]
+        public async Task<IEnumerable<Object>> getApplicationsWithoutId()
+        {
+            var applications = await _service.getApplicationsWithoutId();
+            return applications;
+        }
+
+
+        [HttpGet("email/{email}")]
+        public async Task<Object> GetIdByEmail([FromRoute]string email)
+        {
+            var IdObject = await _service.getApplicationIdBasedOnEmail(email);
+            return IdObject;
         }
 
         // GET: api/Applications/5

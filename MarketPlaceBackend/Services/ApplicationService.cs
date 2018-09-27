@@ -24,7 +24,7 @@ namespace MarketPlaceBackend.Services
             return allApplications;
         }
 
-        public async Task<IEnumerable<Object>> getAllApplicationsWithoutId()
+        public async Task<IEnumerable<Object>> getAllApplicationsAsUserObjectOfOnboarding()
         {
             var applications = await (from app in _context.Application
                                       select new
@@ -32,6 +32,21 @@ namespace MarketPlaceBackend.Services
                                           firstName = app.Name,
                                           lastName = "Bot",
                                           emailId = app.EmailId
+                                      }).ToListAsync();
+            return applications;
+        }
+
+        public async Task<IEnumerable<Object>> getApplicationsWithoutId()
+        {
+            var applications = await (from app in _context.Application
+                                      select new
+                                      {
+                                          Name = app.Name,
+                                          EmailId = app.EmailId,
+                                          Info = app.Info,
+                                          Developer = app.Developer,
+                                          AppUrl = app.AppUrl,
+                                          LogoUrl = app.LogoUrl
                                       }).ToListAsync();
             return applications;
         }
@@ -56,12 +71,31 @@ namespace MarketPlaceBackend.Services
             return application;
         }
 
+        public async Task<Object> getApplicationIdBasedOnEmail(string emailId)
+        {
+            Console.WriteLine("Inside ", emailId);
+            var application = await _context.Application.SingleOrDefaultAsync(app => app.EmailId == emailId);
+            Console.WriteLine(application);
+            if(application == null)
+            {
+                return new
+                {
+                    Id = "No Matching Found"
+                };
+            }
+            return new
+            {
+                Id = application.Id
+            };
+        }
+
         public async Task<string> updateApplication(Application app)
         {
             //_context.Entry(app).State = EntityState.Modified;
             //_context.Application.Update(app);
             _context.Entry(app).Property(x => x.Name).IsModified = isSet(app.Name);
             _context.Entry(app).Property(x => x.Developer).IsModified = isSet(app.Developer);
+            _context.Entry(app).Property(x => x.EmailId).IsModified = isSet(app.EmailId);
             _context.Entry(app).Property(x => x.Info).IsModified = isSet(app.Info);
             _context.Entry(app).Property(x => x.AppUrl).IsModified = isSet(app.AppUrl);
             _context.Entry(app).Property(x => x.LogoUrl).IsModified = isSet(app.LogoUrl);
