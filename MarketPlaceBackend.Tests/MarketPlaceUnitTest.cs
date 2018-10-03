@@ -129,5 +129,18 @@ namespace MarketPlaceBackend.Tests
             AppObject.AppUrl.Should().Be("www.googledrive.com");
             AppObject.LogoUrl.Should().Be("www.glogo.com");
         }
+
+        //[Fact]
+        //public async void TestForGetAllApplicationsAsUserObjects()
+        //{
+        //    var _controller = GetController();
+        //    var result = await _controller.getAllApplicationsAsUserObjectOfOnboarding();
+        //    List<object> ListOfApplications = result as 
+        //    Assert.Equal(2, result.GetType().GetProperties());
+
+        //    var app1 = ListOfApplications[0];
+        //    Assert.Equal("Github", app1.GetType().GetProperty("firstName").ToString());
+        //    Assert.Equal("Bot", app1.GetType().GetProperty("lastName").ToString());
+        //}
     }
 }

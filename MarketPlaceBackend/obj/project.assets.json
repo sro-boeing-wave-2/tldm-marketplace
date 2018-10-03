@@ -2,6 +2,237 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "App.Metrics/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.Core": "2.0.0",
+          "App.Metrics.Formatters.Json": "2.0.0",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/App.Metrics.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/App.Metrics.dll": {}
+        }
+      },
+      "App.Metrics.Abstractions/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.4.1",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/App.Metrics.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/App.Metrics.Abstractions.dll": {}
+        }
+      },
+      "App.Metrics.AspNetCore/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics": "2.0.0",
+          "App.Metrics.AspNetCore.Endpoints": "2.0.0",
+          "App.Metrics.AspNetCore.Reporting": "2.0.0",
+          "App.Metrics.AspNetCore.Tracking": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/App.Metrics.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/App.Metrics.AspNetCore.dll": {}
+        }
+      },
+      "App.Metrics.AspNetCore.Abstractions/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.Abstractions": "2.0.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.0.1",
+          "Microsoft.AspNetCore.Routing.Abstractions": "2.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/App.Metrics.AspNetCore.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/App.Metrics.AspNetCore.Abstractions.dll": {}
+        }
+      },
+      "App.Metrics.AspNetCore.Core/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.AspNetCore.Abstractions": "2.0.0",
+          "App.Metrics.Core": "2.0.0",
+          "App.Metrics.Extensions.Configuration": "2.0.0",
+          "App.Metrics.Extensions.DependencyInjection": "2.0.0",
+          "Microsoft.AspNetCore.Http.Extensions": "2.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/App.Metrics.AspNetCore.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/App.Metrics.AspNetCore.Core.dll": {}
+        }
+      },
+      "App.Metrics.AspNetCore.Endpoints/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.AspNetCore.Hosting": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/App.Metrics.AspNetCore.Endpoints.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/App.Metrics.AspNetCore.Endpoints.dll": {}
+        }
+      },
+      "App.Metrics.AspNetCore.Hosting/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.AspNetCore.Core": "2.0.0",
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/App.Metrics.AspNetCore.Hosting.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/App.Metrics.AspNetCore.Hosting.dll": {}
+        }
+      },
+      "App.Metrics.AspNetCore.Mvc/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.AspNetCore": "2.0.0",
+          "App.Metrics.AspNetCore.Routing": "2.0.0",
+          "Microsoft.AspNetCore.Mvc": "2.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/App.Metrics.AspNetCore.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/App.Metrics.AspNetCore.Mvc.dll": {}
+        }
+      },
+      "App.Metrics.AspNetCore.Reporting/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.AspNetCore.Core": "2.0.0",
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/App.Metrics.AspNetCore.Reporting.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/App.Metrics.AspNetCore.Reporting.dll": {}
+        }
+      },
+      "App.Metrics.AspNetCore.Routing/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.AspNetCore.Abstractions": "2.0.0",
+          "Microsoft.AspNetCore.Routing": "2.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/App.Metrics.AspNetCore.Routing.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/App.Metrics.AspNetCore.Routing.dll": {}
+        }
+      },
+      "App.Metrics.AspNetCore.Tracking/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.AspNetCore.Hosting": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/App.Metrics.AspNetCore.Tracking.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/App.Metrics.AspNetCore.Tracking.dll": {}
+        }
+      },
+      "App.Metrics.Concurrency/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/App.Metrics.Concurrency.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/App.Metrics.Concurrency.dll": {}
+        }
+      },
+      "App.Metrics.Core/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.Abstractions": "2.0.0",
+          "App.Metrics.Concurrency": "2.0.0",
+          "App.Metrics.Formatters.Ascii": "2.0.0",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/App.Metrics.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/App.Metrics.Core.dll": {}
+        }
+      },
+      "App.Metrics.Extensions.Configuration/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics": "2.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/App.Metrics.Extensions.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/App.Metrics.Extensions.Configuration.dll": {}
+        }
+      },
+      "App.Metrics.Extensions.DependencyInjection/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/App.Metrics.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/App.Metrics.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "App.Metrics.Formatters.Ascii/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.Abstractions": "2.0.0",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/App.Metrics.Formatters.Ascii.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/App.Metrics.Formatters.Ascii.dll": {}
+        }
+      },
+      "App.Metrics.Formatters.Json/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "App.Metrics.Abstractions": "2.0.0",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard1.6/App.Metrics.Formatters.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/App.Metrics.Formatters.Json.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -4619,6 +4850,201 @@
     }
   },
   "libraries": {
+    "App.Metrics/2.0.0": {
+      "sha512": "wndmgk11sQZ2/bHgsF4MiUbS7SJUZ0A3DlhxL282kDVtP5rEduvXO3szBZN/vQ+ULAm9yiDGoiXyDcigjV8ozw==",
+      "type": "package",
+      "path": "app.metrics/2.0.0",
+      "files": [
+        "app.metrics.2.0.0.nupkg.sha512",
+        "app.metrics.nuspec",
+        "lib/net452/App.Metrics.dll",
+        "lib/net452/App.Metrics.xml",
+        "lib/netstandard1.6/App.Metrics.dll",
+        "lib/netstandard1.6/App.Metrics.xml"
+      ]
+    },
+    "App.Metrics.Abstractions/2.0.0": {
+      "sha512": "VU2grNPGZFQY1TSGoGzAOP7i9rRCx3gujxuuo4P6nQ7/36CINyzDd7Uj8J62noRpS6+gAfkIJZNVURYFBgh+bQ==",
+      "type": "package",
+      "path": "app.metrics.abstractions/2.0.0",
+      "files": [
+        "app.metrics.abstractions.2.0.0.nupkg.sha512",
+        "app.metrics.abstractions.nuspec",
+        "lib/netstandard1.1/App.Metrics.Abstractions.dll",
+        "lib/netstandard1.1/App.Metrics.Abstractions.xml"
+      ]
+    },
+    "App.Metrics.AspNetCore/2.0.0": {
+      "sha512": "CiRoKsG1HiFlR67IBiMycKtpn/DWmakVgWHTmZia9GhyJpceHrOToflqutxOWwzjT9UY9InR0RKrlwjXpZ3v5g==",
+      "type": "package",
+      "path": "app.metrics.aspnetcore/2.0.0",
+      "files": [
+        "app.metrics.aspnetcore.2.0.0.nupkg.sha512",
+        "app.metrics.aspnetcore.nuspec",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.dll",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.xml"
+      ]
+    },
+    "App.Metrics.AspNetCore.Abstractions/2.0.0": {
+      "sha512": "Q+Agya5gOsaHX+XTi58qJKhft4JTAv2L31Z/PSsHEq8GHFzABPacZFmuvYfzK8N/JVrzTjw+/SliihSn/60ALA==",
+      "type": "package",
+      "path": "app.metrics.aspnetcore.abstractions/2.0.0",
+      "files": [
+        "app.metrics.aspnetcore.abstractions.2.0.0.nupkg.sha512",
+        "app.metrics.aspnetcore.abstractions.nuspec",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Abstractions.dll",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Abstractions.xml"
+      ]
+    },
+    "App.Metrics.AspNetCore.Core/2.0.0": {
+      "sha512": "ZyMcvU4c9VReBzaQHOjMpSn/5prjUNo5z7RGJGYt71uBHW+cG3tsMkQTRsLUWON1xx8E8Ol3XT06t/4Xy7w48A==",
+      "type": "package",
+      "path": "app.metrics.aspnetcore.core/2.0.0",
+      "files": [
+        "app.metrics.aspnetcore.core.2.0.0.nupkg.sha512",
+        "app.metrics.aspnetcore.core.nuspec",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Core.dll",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Core.xml"
+      ]
+    },
+    "App.Metrics.AspNetCore.Endpoints/2.0.0": {
+      "sha512": "6EElE0NrjEoe8a16H1G0Z7zylPgIUdxBaG8chSc1vDoaV2iunBlGITKMOy14rFb1nOAxgSWdsAUtDbDyCDSVnQ==",
+      "type": "package",
+      "path": "app.metrics.aspnetcore.endpoints/2.0.0",
+      "files": [
+        "app.metrics.aspnetcore.endpoints.2.0.0.nupkg.sha512",
+        "app.metrics.aspnetcore.endpoints.nuspec",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Endpoints.dll",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Endpoints.xml"
+      ]
+    },
+    "App.Metrics.AspNetCore.Hosting/2.0.0": {
+      "sha512": "iGNGQaxtB8RIny4pjEEnLMeDvWt+MU7MSZ9baejKyfaXRGWLYcn9KrFKYrTcetakuphYiIVAzIxn/6JZz2NXtA==",
+      "type": "package",
+      "path": "app.metrics.aspnetcore.hosting/2.0.0",
+      "files": [
+        "app.metrics.aspnetcore.hosting.2.0.0.nupkg.sha512",
+        "app.metrics.aspnetcore.hosting.nuspec",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Hosting.dll",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Hosting.xml"
+      ]
+    },
+    "App.Metrics.AspNetCore.Mvc/2.0.0": {
+      "sha512": "/rzeA/3utptMYQdsnfoorLHpJVBhD1gjOdUX86G6elup3nqTzpjOrYBbN5GL8Nx0z8zDBJ0Yj5ZbX8jmsUijdg==",
+      "type": "package",
+      "path": "app.metrics.aspnetcore.mvc/2.0.0",
+      "files": [
+        "app.metrics.aspnetcore.mvc.2.0.0.nupkg.sha512",
+        "app.metrics.aspnetcore.mvc.nuspec",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Mvc.dll",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Mvc.xml"
+      ]
+    },
+    "App.Metrics.AspNetCore.Reporting/2.0.0": {
+      "sha512": "wScACj1EgTD3eiXdZOXlZdiInH3CMdzJgpRnyH34MJLw7wH8ru4hPftNLKn4f2ac6HR9B2/mzD0aoqE0ZWLOfQ==",
+      "type": "package",
+      "path": "app.metrics.aspnetcore.reporting/2.0.0",
+      "files": [
+        "app.metrics.aspnetcore.reporting.2.0.0.nupkg.sha512",
+        "app.metrics.aspnetcore.reporting.nuspec",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Reporting.dll",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Reporting.xml"
+      ]
+    },
+    "App.Metrics.AspNetCore.Routing/2.0.0": {
+      "sha512": "j9sD1SdnpJ3ayRrqLPwXY5LX+9ZHpEBkRZCznGYSSs528W6MZz37IXQY/TY7f75WLMGRrRuSADGxk/0mkK8wyg==",
+      "type": "package",
+      "path": "app.metrics.aspnetcore.routing/2.0.0",
+      "files": [
+        "app.metrics.aspnetcore.routing.2.0.0.nupkg.sha512",
+        "app.metrics.aspnetcore.routing.nuspec",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Routing.dll",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Routing.xml"
+      ]
+    },
+    "App.Metrics.AspNetCore.Tracking/2.0.0": {
+      "sha512": "B789nyUG6qPwkcLrClWLG3+ZEoeewwHlFV7GgCFm+2sEmnwwGepbHp2xs/872h4dyMtG/W0tql6be9sOQ0bMGA==",
+      "type": "package",
+      "path": "app.metrics.aspnetcore.tracking/2.0.0",
+      "files": [
+        "app.metrics.aspnetcore.tracking.2.0.0.nupkg.sha512",
+        "app.metrics.aspnetcore.tracking.nuspec",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Tracking.dll",
+        "lib/netstandard2.0/App.Metrics.AspNetCore.Tracking.xml"
+      ]
+    },
+    "App.Metrics.Concurrency/2.0.0": {
+      "sha512": "tRd9uD8m1eJq4puOLLtzhNqydx5f9U5dZLxqbj9FvGWYu6lcMVc5wD3aZgUkMFRLpsL9FxJOf5jcB5myUp3qOA==",
+      "type": "package",
+      "path": "app.metrics.concurrency/2.0.0",
+      "files": [
+        "app.metrics.concurrency.2.0.0.nupkg.sha512",
+        "app.metrics.concurrency.nuspec",
+        "lib/netstandard1.1/App.Metrics.Concurrency.dll",
+        "lib/netstandard1.1/App.Metrics.Concurrency.xml"
+      ]
+    },
+    "App.Metrics.Core/2.0.0": {
+      "sha512": "stw6CpQDNxDSXaK4mS1uVA426Elle15yrbJfrMt81eBgZyoP1RSjUYobPGorp4INmVq1bVdi7qrgL8rwek9x5Q==",
+      "type": "package",
+      "path": "app.metrics.core/2.0.0",
+      "files": [
+        "app.metrics.core.2.0.0.nupkg.sha512",
+        "app.metrics.core.nuspec",
+        "lib/net452/App.Metrics.Core.dll",
+        "lib/net452/App.Metrics.Core.xml",
+        "lib/netstandard1.6/App.Metrics.Core.dll",
+        "lib/netstandard1.6/App.Metrics.Core.xml"
+      ]
+    },
+    "App.Metrics.Extensions.Configuration/2.0.0": {
+      "sha512": "8eZ3+zqoSxolNPjwbbP2iY3BlZMYx0A+2Be+py2j4lOT9sj7gjjpcZnwChjWx0NuE4R3MEZ5L1TiQcsYWtkkQQ==",
+      "type": "package",
+      "path": "app.metrics.extensions.configuration/2.0.0",
+      "files": [
+        "app.metrics.extensions.configuration.2.0.0.nupkg.sha512",
+        "app.metrics.extensions.configuration.nuspec",
+        "lib/netstandard2.0/App.Metrics.Extensions.Configuration.dll",
+        "lib/netstandard2.0/App.Metrics.Extensions.Configuration.xml"
+      ]
+    },
+    "App.Metrics.Extensions.DependencyInjection/2.0.0": {
+      "sha512": "L2LcvgoxLHiRBB51IIsJ9OV7Xep5EuiQLmQNnKX74w69YbhG66hJ/IvdbpBxZS2/4yY8n3un4HYa2m7eCU1Ajg==",
+      "type": "package",
+      "path": "app.metrics.extensions.dependencyinjection/2.0.0",
+      "files": [
+        "app.metrics.extensions.dependencyinjection.2.0.0.nupkg.sha512",
+        "app.metrics.extensions.dependencyinjection.nuspec",
+        "lib/netstandard2.0/App.Metrics.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/App.Metrics.Extensions.DependencyInjection.xml"
+      ]
+    },
+    "App.Metrics.Formatters.Ascii/2.0.0": {
+      "sha512": "gIibk4+vMFsnP4ZnTEi0lkjt0nC0qSNZjYtoMc2lY4uZjyHZF5wp3KK/7CyJOYc1E8qo5RJcdmT8ODZM5lkvJw==",
+      "type": "package",
+      "path": "app.metrics.formatters.ascii/2.0.0",
+      "files": [
+        "app.metrics.formatters.ascii.2.0.0.nupkg.sha512",
+        "app.metrics.formatters.ascii.nuspec",
+        "lib/net452/App.Metrics.Formatters.Ascii.dll",
+        "lib/net452/App.Metrics.Formatters.Ascii.xml",
+        "lib/netstandard1.6/App.Metrics.Formatters.Ascii.dll",
+        "lib/netstandard1.6/App.Metrics.Formatters.Ascii.xml"
+      ]
+    },
+    "App.Metrics.Formatters.Json/2.0.0": {
+      "sha512": "okISJCWZB4VFrVxRC4hpdCJC2Pf39Kmuc4RkLZP7zVCEfxizHhmvNuQFBoAzF/Z4fxycw2iMdTZt8HlpvTmmLA==",
+      "type": "package",
+      "path": "app.metrics.formatters.json/2.0.0",
+      "files": [
+        "app.metrics.formatters.json.2.0.0.nupkg.sha512",
+        "app.metrics.formatters.json.nuspec",
+        "lib/net452/App.Metrics.Formatters.Json.dll",
+        "lib/net452/App.Metrics.Formatters.Json.xml",
+        "lib/netstandard1.6/App.Metrics.Formatters.Json.dll",
+        "lib/netstandard1.6/App.Metrics.Formatters.Json.xml"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "sha512": "rMDlyePoxggkmN/qgha1+BR2Uy+dOr38xKCQOPfVNKGY07R2nYJGMTKJFE1XFgwD70RYUNazf2fqutjJF18XgQ==",
       "type": "package",
@@ -12212,6 +12638,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "App.Metrics.AspNetCore.Mvc >= 2.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.1"
@@ -12258,6 +12685,10 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
+          "App.Metrics.AspNetCore.Mvc": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",
